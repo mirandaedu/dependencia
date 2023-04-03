@@ -10,8 +10,6 @@ public class Questao212{
 
     double a, b;
 
-    double adicao, subtr, mult, divi;
-
     
 
     System.out.print("Digite um valor: ");
@@ -32,39 +30,29 @@ public class Questao212{
 
     
 
-    adicao=a+b;
-
-    subtr=a-b;
-
-    mult=a*b;
-
-    divi=a/b;
-
-    
-
    switch(operacao){
 
      case "+":
 
-       System.out.print(adicao);
+       System.out.print(a+b);
 
        break;
 
      case "-":
 
-       System.out.print(subtr);
+       System.out.print(a-b);
 
        break;
 
      case "*":
 
-       System.out.print(mult);
+       System.out.print(a*b);
 
        break;
 
      case "/":
 
-       System.out.print(divi);
+       System.out.print(a/b);
 
        break;
 
@@ -79,3 +67,4 @@ public class Questao212{
   }
 
 }
+
