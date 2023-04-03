@@ -30,15 +30,15 @@ public class Questao206{
 
       System.out.print(a+" é maior que "+b+ " e "+c);
 
-    }else{
+    }
 
-      if(b>a && b>c){
+    if(b>a && b>c){
 
       System.out.print(b+" é maior que "+a+ " e "+c);
 
     }
 
-    }
+
 
     if(c>a && c>b){
 
