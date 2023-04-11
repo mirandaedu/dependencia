@@ -19,17 +19,11 @@ public class Questao213{
    
 
     if(salario<500){
-
       System.out.print("O seu salário agora é de "+(salario/15*100));
-
-    }
-
-    if(salario>=500 || salario==1000){
-
+    }if(salario>=500 || salario==1000){
+      System.out.print("O seu salario agora é de  "+(salario/10*100));
+    }if(salario>1000){
       System.out.print("O seu salario agora é de  "+(salario/5*100));
-
     }
-
    }
-
 }
