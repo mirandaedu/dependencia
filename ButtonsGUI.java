@@ -69,9 +69,13 @@ public class MinhaJanela extends JFrame{
 		   
 		   JProgressBar barra = new JProgressBar(SwingConstants.HORIZONTAL, 0, 100);
 		   barra.setValue(30);
-		   
-			container.add(botao1);
-			container.add(botao2);
+
+		   JPanel painel = new JPanel();
+		   painel.setLayout(new FlowLayout());
+		   painel.add(botao1);
+		   painel.add(botao2);
+		   painel.setBackground(Color.BLUE);
+		   container.add(painel);
 			
 			container.add(chEconomia);
 			container.add(chEducacao);
