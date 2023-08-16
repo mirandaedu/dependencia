@@ -16,7 +16,7 @@ public class Janela extends JFrame{
 			public void mouseMoved(MouseEvent e) {
 				int x = e.getX();
 				int y = e.getY();
-				System.out.println(x + " - " + x);
+				System.out.println(x + " - " + y);
 				
 			}
 			
