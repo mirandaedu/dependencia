@@ -53,8 +53,8 @@ public class MinhaJanela extends JFrame{
 		    
 		    JScrollPane scroll = new JScrollPane(list);
 		    
-		    
-		   JTextField textField = new JTextField("Teste", 15);
+		   JLabel label = new JLabel("Insira seu nome");
+		   JTextField textField = new JTextField(15);
 		   JTextArea textArea = new JTextArea("Texto de Teste", 10, 30);
 		   JScrollPane scroll2 = new JScrollPane(textArea);
 		   
@@ -88,7 +88,8 @@ public class MinhaJanela extends JFrame{
 			container.add(cblista);
 			
 			container.add(scroll);
-			
+
+			container.add(label);
 			container.add(textField);
 			container.add(scroll2);
 			
