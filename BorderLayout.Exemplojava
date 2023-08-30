@@ -1,0 +1,44 @@
+import java.awt.BorderLayout;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class BorderLayout extends JFrame{
+	
+	private JLabel lblNorth, lblSouth, lblWest, lblEaist, lblCenter;
+	
+	public BorderLayout() {
+		setTitle("Janela da Miranda");
+		setSize(400, 150);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container cont = getContentPane();
+		BorderLayout layout = new BorderLayout(10, 20);
+		cont.setLayout(layout);
+		
+		lblNorth = new JLabel("NORTH");
+		lblSouth = new JLabel("SOUTH");
+		lblWest = new JLabel("WEST");
+		lblEaist = new JLabel("EAIST");
+		lblCenter = new JLabel("CENTER");
+		
+		lblCenter.setOpaque(true);
+		lblCenter.setBackground(Color.MAGENTA);
+		
+		cont.add(lblNorth, BorderLayout.NORTH);
+		cont.add(lblSouth, BorderLayout.SOUTH);
+		cont.add(lblWest, BorderLayout.WEST);
+		cont.add(lblEaist, BorderLayout.EAIST);
+		cont.add(lblCenter, BorderLayout.CENTER);
+			
+	}
+
+	public static void main(String[] args) {
+		BorderLayout layout = new BorderLayout();
+		layout.setVisible(true);
+
+	}
+}
